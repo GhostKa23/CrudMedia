@@ -1,0 +1,37 @@
+:host { display: block; min-height: 100vh; background: linear-gradient(135deg, #fdecee, #eef2fb); }
+.pagina { max-width: 560px; margin: 0 auto; padding: 2rem 1rem; font-family: system-ui, sans-serif; color: #2b2b2b; }
+.topo { text-align: center; margin-bottom: 1.5rem; }
+.topo h1 { margin: 0; color: #b01c2e; }
+.topo p { margin: 0.4rem 0 0; color: #666; }
+.cartao { background: #fff; border-radius: 14px; padding: 1.5rem; margin-bottom: 1.2rem; box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08); }
+.cartao h2 { margin-top: 0; }
+.campo { display: flex; flex-direction: column; margin-bottom: 0.6rem; }
+label { font-weight: 600; margin-bottom: 0.3rem; }
+input { padding: 0.6rem; border: 1px solid #ccc; border-radius: 8px; font-size: 1rem; }
+input:focus { outline: 2px solid #b01c2e55; border-color: #b01c2e; }
+.notas { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.8rem; }
+.erro { color: #c0392b; font-size: 0.82rem; min-height: 1.1rem; margin-top: 0.2rem; }
+.botoes { display: flex; gap: 0.8rem; margin-top: 0.8rem; }
+button { padding: 0.65rem 1.2rem; border: 0; border-radius: 8px; font-size: 1rem; cursor: pointer; }
+.btn-principal { flex: 1; background: #b01c2e; color: #fff; }
+.btn-principal:hover { background: #8e1624; }
+.btn-secundario { background: #e6e6e6; }
+.btn-secundario:hover { background: #d4d4d4; }
+.resultado { border-left: 8px solid #999; }
+.resultado.aprovado { border-left-color: #2e9e4f; }
+.resultado.recuperacao { border-left-color: #e0a800; }
+.resultado.reprovado { border-left-color: #d63031; }
+.situacao span { font-weight: 700; }
+.aprovado .situacao span { color: #2e9e4f; }
+.recuperacao .situacao span { color: #b88700; }
+.reprovado .situacao span { color: #d63031; }
+table { width: 100%; border-collapse: collapse; }
+th, td { text-align: left; padding: 0.55rem 0.4rem; border-bottom: 1px solid #eee; }
+.etiqueta { padding: 0.2rem 0.6rem; border-radius: 999px; font-size: 0.8rem; font-weight: 700; }
+.etiqueta.aprovado { background: #d9f2e0; color: #1f7a39; }
+.etiqueta.recuperacao { background: #fff1c2; color: #8a6700; }
+.etiqueta.reprovado { background: #fbd9d9; color: #b02222; }
+.btn-remover { padding: 0.3rem 0.7rem; font-size: 0.85rem; background: #f3f3f3; }
+.btn-remover:hover { background: #e3e3e3; }
+.media-turma { margin: 1rem 0 0; text-align: right; }
+@media (max-width: 480px) { .notas { grid-template-columns: 1fr; } }
